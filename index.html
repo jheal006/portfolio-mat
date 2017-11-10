@@ -26,8 +26,19 @@
 
   <!-- Cards -->
   <div class="container">
+    <!-- Modal Structure -->
+     <div id="modal1" class="modal">
+       <div class="modal-content">
+         <h4>Modal Header</h4>
+         <p>A bunch of text</p>
+       </div>
+       <div class="modal-footer">
+         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+       </div>
+     </div>
     <div class="row">
       <div class="col-sm-12 col-md-10 main-section">
+
 
         <!-- Primary Card -->
         <div class="col s12 m10">
@@ -42,10 +53,14 @@
                   Meet Jonathan Healy, a full stack web developer, with a knack for all things backend including JavaScript, NodeJS, and database
                   interface.
                 </p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
+              
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
             </div>
           </div>
         </div>
@@ -58,14 +73,14 @@
         <div class="col s12 m4">
           <div class="card medium">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="assets/images/snippet8.jpg">
+              <img class="activator" src="assets/images/snippet9.jpg">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">About
                 <i class="material-icons right">more_vert</i>
               </span>
               <p>
-                <a href="#">This is a link</a>
+                <a href="#">Link</a>
               </p>
             </div>
             <div class="card-reveal">
@@ -89,55 +104,40 @@
         <!-- Card 2 -->
         <div class="col s12 m4">
           <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="assets/images/capture.jpg">
+            <div class="card-image">
+                <img src="assets/images/cont.jpg">
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Projects
-                <i class="material-icons right">more_vert</i>
-              </span>
-              <p>
-                <a href="#">This is a link</a>
-              </p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title
-                  <i class="material-icons right">close</i>
+              <div class="card-content">
+                <span class="card-title grey-text text-darken-4">Projects
                 </span>
-              <p>
-                Having had previous adventures as a commercial star, and loads of work experience in the customer service, sales and vehicle
-                rental industries, feel free to check out additional information on the profile and contact links above!
-              </p>
-            </div>
+                <p>
+                  <!-- Modal Trigger -->
+                    <a class="waves-effect waves-light modal-trigger" href="#modal1" onclick="$('#modal1').modal('open');">Link</a>
+                </p>
+              </div>
           </div>
         </div>
         <!-- Card 3 -->
         <div class="col s12 m4">
           <div class="card medium">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="assets/images/rez.jpg">
+            <div class="card-image">
+              <a href="assets/docs/JonathanHealy1pgnet.pdf">
+                <img src="assets/images/rez.jpg">
+              </a>
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Resume
-                <i class="material-icons right">more_vert</i>
-              </span>
-              <p>
-                <a href="#">This is a link</a>
-              </p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title
-                  <i class="material-icons right">close</i>
+              <div class="card-content">
+                <span class="card-title grey-text text-darken-4">Resumé
                 </span>
-              <p>
-                Having had previous adventures as a commercial star, and loads of work experience in the customer service, sales and vehicle
-                rental industries, feel free to check out additional information on the profile and contact links above!
-              </p>
-            </div>
+                <p>
+                  <a href="assets/docs/JonathanHealy1pgnet.pdf">PDF</a>
+                </p>
+              </div>
           </div>
         </div>
 
       </div>
+
+
     </div>
   </div>
     <!-- <footer>
@@ -175,6 +175,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://use.fontawesome.com/6d826e15ac.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script>
+      $(document).ready(function() {
+        $('.modal').modal();
+        $('#modal1').on('click', function() {
+          });
+        });
+      </script>
 
 </body>
 
