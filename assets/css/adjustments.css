@@ -105,6 +105,7 @@ a {
 }
 
 .card.small .card-image, .card.medium .card-image, .card.large .card-image {
+  height: 256px;
   max-height: 70%;
 }
 
@@ -119,6 +120,10 @@ a {
   font-size: 22px;
   line-height: 2.5;
   color: darkred;
+}
+
+.contactImg {
+  height: 256px;
 }
 
 
@@ -188,11 +193,16 @@ a {
 
 @media screen and (max-width: 992px) {
 
+.container {
+  width: 90%;
+}
 
 .sidebar {
   float: left;
   max-width: 650px;
 }
+
+
 
 
 }
