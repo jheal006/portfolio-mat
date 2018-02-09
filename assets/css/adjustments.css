@@ -114,7 +114,7 @@ a {
   padding: 18px;
 }
 
-.card-reveal, 
+.card-reveal,
 .card-reveal a {
   font-size: 22px;
   line-height: 2.5;
@@ -126,13 +126,13 @@ a {
 
 #modal1 {
   background: #fff;
-  
+
 }
 
 #modal-container {
   background: grey;
   padding-top: 15px;
-  padding-bottom: 15px;  
+  padding-bottom: 15px;
 }
 
 .modal-style {
@@ -157,6 +157,10 @@ a {
 .modal-card p {
   font-size: 1.125rem;
   line-height: 1.5;
+}
+
+li:first-child {
+  font-size: 18px;
 }
 
 /* Footer */
