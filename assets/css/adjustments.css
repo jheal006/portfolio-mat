@@ -164,9 +164,6 @@ a {
   line-height: 1.5;
 }
 
-li:first-child {
-  font-size: 18px;
-}
 
 /* Footer */
 
@@ -206,7 +203,12 @@ li:first-child {
   max-width: 650px;
 }
 
+}
 
+@media (max-width: 1450px) {
 
+  li:first-child {
+    font-size: 18px;
+  }
 
 }
